@@ -1,0 +1,153 @@
+[
+    {
+      "playerId": 1,
+      "name": "MS Dhoni",
+      "country": "India",
+      "image": "https://i.ibb.co.com/FYX3L4z/ms-dhoni-india.png",
+      "role": "Wicketkeeper Batsman",
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "None",
+      "biddingPrice": 2500000
+    },
+    {
+      "playerId": 2,
+      "name": "Brendon McCullum",
+      "country": "New Zealand",
+      "image": "https://i.ibb.co.com/VVc5bRv/brendon-mccullum-new-zealand.png",
+      "role": "Wicketkeeper Batsman",
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "None",
+      "biddingPrice": 1800000
+    },
+    {
+      "playerId": 3,
+      "name": "Virat Kohli",
+      "country": "India",
+      "image": "https://i.ibb.co.com/yWdd34L/virat-kohli-india.png",
+      "role": "Batsman",
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "None",
+      "biddingPrice": 3200000
+    },
+    {
+      "playerId": 4,
+      "name": "Shoaib Akhter",
+      "country": "Pakistan",
+      "image": "https://i.ibb.co.com/rmsgSkn/shoaib-akhtar-pakistan.png",
+      "role": "Bowler",
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm fast",
+      "biddingPrice": 1500000
+    },
+    {
+      "playerId": 5,
+      "name": "Shakib Al Hasan",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co.com/HtZk0p8/shakib-al-hasan-bangladesh.png",
+      "role": "All-rounder",
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Left-arm orthodox",
+      "biddingPrice": 2000000
+    },
+    {
+      "playerId": 6,
+      "name": "Mahmudullah Riyad",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co.com/nCMQcHC/Mahmudullah-bangladesh.png",
+      "role": "All-rounder",
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm off-spin",
+      "biddingPrice": 1000000
+    },
+    {
+      "playerId": 7,
+      "name": "Glenn Maxwell",
+      "country": "Australia",
+      "image": "https://i.ibb.co.com/GJvNwbZ/glenn-maxwell-australi.png",
+      "role": "All-rounder",
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm off-spin",
+      "biddingPrice": 2800000
+    },
+    {
+      "playerId": 8,
+      "name": "Muttiah Muralitharan",
+      "country": "Sri Lanka",
+      "image": "https://i.ibb.co.com/0sStVfc/Muttiah-Muralitharan-Sri-lanka.png",
+      "role": "Bowler",
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm off-spin",
+      "biddingPrice": 1200000
+    },
+    {
+      "playerId": 9,
+      "name": "Tamim Iqbal",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co.com/CsW1sn8/tamim-iqbal-bangladesh.png",
+      "role": "Batsman",
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "None",
+      "biddingPrice": 1400000
+    },
+    {
+      "playerId": 10,
+      "name": "Chris Gayle",
+      "country": "West Indies",
+      "image": "https://i.ibb.co.com/g7rhW2L/chris-gayle-west-indies.png",
+      "role": "Batsman",
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Right-arm off-spin",
+      "biddingPrice": 2600000
+    },
+    {
+      "playerId": 11,
+      "name": "Pat Cummins",
+      "country": "Australia",
+      "image": "https://i.ibb.co.com/z8bwSNS/pat-cummins-australia.png",
+      "role": "Bowler",
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm fast",
+      "biddingPrice": 2400000
+    },
+    {
+      "playerId": 12,
+      "name": "AB de Villiers",
+      "country": "South Africa",
+      "image": "https://i.ibb.co.com/ZJsDx2C/ab-de-villiers-south-africa.png",
+      "role": "Batsman",
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "None",
+      "biddingPrice": 3000000
+    },
+    {
+      "playerId": 13,
+      "name": "Rohit Sharma",
+      "country": "India",
+      "image": "https://i.ibb.co.com/x79sgCd/rohit-sharma-india.png",
+      "role": "Batsman",
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "None",
+      "biddingPrice": 2900000
+    },
+    {
+      "playerId": 14,
+      "name": "Glenn McGrath",
+      "country": "Australia",
+      "image": "https://i.ibb.co.com/KyZC1y1/glenn-mcgrath-australia.jpg",
+      "role": "Bowler",
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm fast-medium",
+      "biddingPrice": 1600000
+    },
+    {
+      "playerId": 15,
+      "name": "Moeen Ali",
+      "country": "England",
+      "image": "https://i.ibb.co.com/T8qsSGP/moeen-ali-england.jpg",
+      "role": "All-rounder",
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Right-arm off-spin",
+      "biddingPrice": 2200000
+    }
+  ]
+  
