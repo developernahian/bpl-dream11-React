@@ -1,6 +1,7 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 import logo from '../assets/images/logo.png';
 import coin from '../assets/images/currency.png';
+import bannerMain from '../assets/images/banner-main.png';
 
 const Header = () => {
     return (
@@ -24,8 +25,8 @@ const Header = () => {
 
                         <div className="md:hidden dropdown dropdown-end">
                             <div tabIndex={0} role="button" className="btn btn-ghost rounded-btn">
-                            
-                            <GiHamburgerMenu  className="text-2xl"/>
+
+                                <GiHamburgerMenu className="text-2xl" />
                             </div>
                             <ul
                                 tabIndex={0}
@@ -64,10 +65,10 @@ const Header = () => {
 
 
 
-                        <div className="border-2 rounded-xl border-[rgba(19, 19, 19, 0.1)] px-5 py-2 md:py-4  flex justify-center items-center md:ml-12 space-x-2 md:space-x-3 text-[15px] md:text-[16px]">
+                        <div className="border-2 rounded-xl px-5 py-2 md:py-4 flex justify-center items-center md:ml-12 space-x-2 md:space-x-3 text-[15px] md:text-[16px]">
                             <p className="">1000000</p>
                             <p>Coin</p>
-                            <img src={coin} alt='coin'/>
+                            <img src={coin} alt='coin' />
                         </div>
 
 
@@ -87,8 +88,16 @@ const Header = () => {
 
 
             {/* ***************************** Banner Start ***************************** */}
-            <section>
-                
+
+            <section className="bg-bgShadow bg-black bg-center bg-no-repeat bg-cover mt-10 flex flex-col justify-center items-center rounded-xl">
+                <img src={bannerMain} alt="" className="w-66 mt-12" />
+                <p className="text-white_primary text-lg md:text-3xl lg:text-[42px] pt-6 pb-4">Assemble Your Ultimate Dream 11 Cricket Team</p>
+                <p className="text-white_secondary text-base md:text-2xl">Beyond Boundaries Beyond Limits</p>
+
+                <div className="border-2 rounded-xl border-[#E7FE29] px-2 py-2 hover:border-yellow-500 mt-6 mb-12">
+                    <button className="btn bg-[#E7FE29] hover:bg-yellow-500">Claim Free Credit</button>
+                </div>
+
             </section>
             {/* ***************************** Banner End ***************************** */}
 
@@ -96,7 +105,7 @@ const Header = () => {
 
 
 
-            
+
 
 
 
