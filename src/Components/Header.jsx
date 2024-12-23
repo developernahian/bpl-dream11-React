@@ -1,6 +1,8 @@
+import { GiHamburgerMenu } from "react-icons/gi";
 import logo from '../assets/images/logo.png';
+import coin from '../assets/images/currency.png';
 
-const Navbar = () => {
+const Header = () => {
     return (
         <div>
 
@@ -8,13 +10,8 @@ const Navbar = () => {
 
 
 
-
-
-
-
-
             {/* ***************************** Navbar Start ***************************** */}
-            <nav className="navbar bg-base-300 rounded-box">
+            <nav className="navbar rounded-xl">
 
                 {/* Logo */}
                 <div className="flex-1 px-2 lg:flex-none">
@@ -26,10 +23,13 @@ const Navbar = () => {
                     <div className="flex items-stretch">
 
                         <div className="md:hidden dropdown dropdown-end">
-                            <div tabIndex={0} role="button" className="btn btn-ghost rounded-btn">Dropdown</div>
+                            <div tabIndex={0} role="button" className="btn btn-ghost rounded-btn">
+                            
+                            <GiHamburgerMenu  className="text-2xl"/>
+                            </div>
                             <ul
                                 tabIndex={0}
-                                className="menu dropdown-content bg-base-100 rounded-box z-[1] mt-4 w-52 p-2 shadow">
+                                className="menu dropdown-content bg-base-100 rounded-box z-[1] mt-4 w-52 p-2 shadow absolute left-5">
                                 <li><a>Home</a></li>
                                 <li><a>Fixture</a></li>
                                 <li><a>Teams</a></li>
@@ -42,7 +42,7 @@ const Navbar = () => {
 
                         {/* Desktop menu */}
                         <div className="hidden md:block">
-                            <ul className='bg-green-300 h-full flex items-center  space-x-4'>
+                            <ul className='h-full flex items-center  space-x-12 text-secondary'>
                                 <li>
                                     <a href="" className=''>Home</a>
                                 </li>
@@ -64,8 +64,10 @@ const Navbar = () => {
 
 
 
-                        <div className=" bg-red-400 flex justify-center items-center">
-                            coin
+                        <div className="border-2 rounded-xl border-[rgba(19, 19, 19, 0.1)] px-5 py-2 md:py-4  flex justify-center items-center md:ml-12 space-x-2 md:space-x-3 text-[15px] md:text-[16px]">
+                            <p className="">1000000</p>
+                            <p>Coin</p>
+                            <img src={coin} alt='coin'/>
                         </div>
 
 
@@ -82,8 +84,24 @@ const Navbar = () => {
 
 
 
+
+
+            {/* ***************************** Banner Start ***************************** */}
+            <section>
+                
+            </section>
+            {/* ***************************** Banner End ***************************** */}
+
+
+
+
+
+            
+
+
+
         </div>
     );
 };
 
-export default Navbar;
+export default Header;

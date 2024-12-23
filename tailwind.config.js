@@ -10,7 +10,7 @@ export default {
         // font primary ta index.css file theke body{color: ...} hisebe use korechi. tai ekhane comment kore rekhechi... 
         // primary: "rgb(19, 19, 19)",
         secondary: "rgba(19, 19, 19, 0.7)",
-        teritary: "rgba(19, 19, 19, 0.4)",
+        tertary: "rgba(19, 19, 19, 0.4)",
         white_primary: "rgb(255, 255, 255)",
         white_secondary: "rgba(255, 255, 255, 0.7)",
         white_teritary: "rgba(255, 255, 255, 0.6)",

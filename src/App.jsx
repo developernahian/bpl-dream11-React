@@ -1,6 +1,6 @@
 
 import './App.css'
-import Navbar from './Components/Navbar'
+import Header from './Components/Header'
 
 function App() {
 
@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <div className='w-11/12 mx-auto'>
-        <Navbar></Navbar>
-        <p className='font-inter'>The name of my country is bangladesh</p>
+        <Header></Header>
+        
 
       </div>
     </>
