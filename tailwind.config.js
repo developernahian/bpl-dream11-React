@@ -24,7 +24,7 @@ export default {
       },
 
       backgroundImage: {
-        bgShadow: "url('./src/assets/images/bg-shadow.png')",
+        // bgShadow: "url('bg-shadow.png')",
       },
 
     },

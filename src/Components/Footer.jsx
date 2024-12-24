@@ -1,4 +1,5 @@
 import logoFooter from '../assets/images/logo-footer.png'
+import bgShadow from '../assets/images/bg-shadow.png'
 
 const Footer = () => {
     return (
@@ -8,10 +9,18 @@ const Footer = () => {
             {/* ***************************** Subscribe to our Newsletter section Start ***************************** */}
 
             <section className='absolute left-0 right-0 -top-36 md:-top-48 bg-white bg-opacity-20 w-11/12 mx-auto border-2 rounded-xl p-3 md:p-5'>
-                <div className="bg-bgShadow bg-white   bg-center bg-no-repeat bg-cover flex flex-col justify-center items-center rounded-xl pt-10 md:pt-20 pb-10 md:pb-20">
+                <div
+                    style={{
+                        backgroundImage: `url(${bgShadow})`,
+                        backgroundColor: 'white',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
+                    }}
+                    className="flex flex-col justify-center items-center rounded-xl pt-10 md:pt-20 pb-10 md:pb-20">
 
                     <h3 className="text-xl md:text-3xl font-semibold text-center">Subscribe to our Newsletter</h3>
-                    <p className="text-sm md:text-xl font-medium text-secondary text-center pt-2 md:pt-4 pb-4 md:pb-6">Get the latest updates and news right in your inbox!</p>
+                    <p className="font-inter text-sm md:text-xl font-medium text-secondary text-center pt-2 md:pt-4 pb-4 md:pb-6">Get the latest updates and news right in your inbox!</p>
 
 
 
