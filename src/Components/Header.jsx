@@ -5,7 +5,7 @@ import bgShadow from '../assets/images/bg-shadow.png';
 import bannerMain from '../assets/images/banner-main.png';
 import PropTypes from 'prop-types';
 
-const Header = ({ handleIncreaseCredit, credit, handleClickActiveTab, activeTab }) => {
+const Header = ({ handleIncreaseCredit, credit, handleClickActiveTab, activeTab, selectLength }) => {
 
 
 
@@ -127,31 +127,57 @@ const Header = ({ handleIncreaseCredit, credit, handleClickActiveTab, activeTab 
                     {
                         activeTab === 'available' ? (
                             <div>
-                                <p>Available Players</p>
+                                <p className="text-2xl font-bold">Available Players</p>
                             </div>
                         ) : (
                             <div>
-                                <p>Selected Players</p>
+                                <p className="text-2xl font-bold">Selected Players ({selectLength}/6)</p>
                             </div>
                         )
                     }
                 </div>
                 {/* right */}
-                <div>
-                    <button
-                        onClick={() => handleClickActiveTab('available')}
-                        className={`${activeTab === 'available' ? 'bg-green-500' : 'bg-red-500'}`}
-                    >Available</button>
+                <div className="border-2 border-gray-300 rounded-xl">
+                    <button style={{
+                        paddingLeft: '20px',
+                        paddingRight: '20px',
+                        paddingTop: '10px',
+                        paddingBottom: '10px',
+                        fontWeight: 'bold',
+                        borderRadius: '10px 0 0 10px',
+                        // top-left top-right bottom-right bottom-left
 
-                    <button
+                        backgroundColor: activeTab === 'available' ? '#E7FE29' : 'white',
+                        color: activeTab === 'available' ? 'black' : 'rgba(19, 19, 19, 0.6)',
+
+                    }}
+                        onClick={() => handleClickActiveTab('available')}
+
+                    >Available </button>
+
+                    <button style={{
+                        paddingLeft: '20px',
+                        paddingRight: '20px',
+                        paddingTop: '10px',
+                        paddingBottom: '10px',
+                        fontWeight: 'bold',
+                        borderRadius: '0 10px 10px 0',
+                        // top-left top-right bottom-right bottom-left
+
+                        backgroundColor: activeTab === 'selected' ? '#E7FE29' : 'white',
+                        color: activeTab === 'selected' ? 'black' : 'rgba(19, 19, 19, 0.6)',
+
+                    }}
                         onClick={() => handleClickActiveTab('selected')}
-                        className={`${activeTab === 'selected' ? 'text-green-500' : 'text-red-500'}`}
-                    >Selected</button>
+
+                    >Selected ({selectLength})</button>
                 </div>
 
 
             </section>
 
+            {/* style or className*/}
+            {/* className={`${activeTab === 'available' ? '' : ''}`} */}
 
             {/* ***************************** Toggle Button End with Status End ***************************** */}
 
@@ -179,6 +205,8 @@ Header.propTypes = {
 
     handleClickActiveTab: PropTypes.func.isRequired,
     activeTab: PropTypes.string.isRequired,
+
+    selectLength: PropTypes.number.isRequired,
 
 
 }

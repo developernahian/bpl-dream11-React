@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import Player from "./Player";
+import PropTypes from 'prop-types';
 
 
-const AvailablePlayers = () => {
+const AvailablePlayers = ({handleClickSelect}) => {
 
     const [players, setPlayers] = useState([]);
     useEffect(() => {
@@ -14,11 +15,11 @@ const AvailablePlayers = () => {
     
     return (
         <div>
-            <h1>Available Players</h1>
+            
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6">
             {
-                players.map(player => <Player key={player.playerId} player={player} ></Player>)
+                players.map(player => <Player key={player.playerId} player={player}  handleClickSelect={handleClickSelect}></Player>)
             }
             </div>
 
@@ -33,5 +34,13 @@ const AvailablePlayers = () => {
         </div>
     );
 };
+
+
+AvailablePlayers.propTypes = {
+
+    handleClickSelect: PropTypes.func.isRequired,
+
+
+}
 
 export default AvailablePlayers;

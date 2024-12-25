@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import { FaUser } from "react-icons/fa";
 import { FaFlag } from "react-icons/fa6";
 
-const Player = ({ player }) => {
-    console.log(player);
+const Player = ({ player, handleClickSelect }) => {
+    // console.log(player);
 
 
     return (
@@ -15,7 +15,7 @@ const Player = ({ player }) => {
             <div className="card bg-base-100 border-2 shadow-xl">
                 <figure className='px-5 pt-5'>
                     <img
-                        className="w-full xl:h-60 rounded-xl"
+                        className="w-full  rounded-xl"
                         src={player.image}
                         alt={`Image of ${player.name}`} />
                 </figure>
@@ -56,7 +56,7 @@ const Player = ({ player }) => {
                         {/* price and button */}
                         <div className='flex justify-between items-center'>
                             <p className='font-semibold text-sm md:text-base'>Price: &#36;{player.biddingPrice}</p>
-                            <button className='px-3 md:px-6 py-1 md:py-2 rounded-xl border-gray-400 border-2 font-semibold  hover:bg-[#E7FE29] hover:border-[#E7FE29] hover:font-bold'>Select</button>
+                            <button onClick={() => handleClickSelect(player)} className='px-3 md:px-6 py-1 md:py-2 rounded-xl border-gray-400 border-2 font-semibold  hover:bg-[#E7FE29] hover:border-[#E7FE29] hover:font-bold'>Select</button>
 
                         </div>
                     </div>
@@ -81,6 +81,7 @@ const Player = ({ player }) => {
 Player.propTypes = {
 
     player: PropTypes.object.isRequired,
+    handleClickSelect: PropTypes.func.isRequired,
 
 
 }
