@@ -38,6 +38,15 @@ const SelectPlayer = ({ selectPlayer, handleDeletePlayer }) => {
                 </div> */}
 
             </div>
+
+
+
+
+                        
+
+
+
+
         </div>
     );
 };

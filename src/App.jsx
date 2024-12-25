@@ -85,7 +85,7 @@ function App() {
           activeTab === 'available' && <AvailablePlayers handleClickSelect={handleClickSelect}></AvailablePlayers>
         }
         {
-          activeTab === 'selected' && <SelectedPlayers selectPlayer={select} handleDeletePlayer={handleDeletePlayer}></SelectedPlayers>
+          activeTab === 'selected' && <SelectedPlayers selectPlayer={select} handleDeletePlayer={handleDeletePlayer} handleClickActiveTab={handleClickActiveTab}></SelectedPlayers>
         }
 
       </div>

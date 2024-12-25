@@ -35,7 +35,7 @@ const Player = ({ player, handleClickSelect }) => {
                             <p className='text-tertary'>{player.country}</p>
                         </div>
 
-                        <div className='px-2 md:px-4 py-2  border bg-[#F3F3F3] border-none rounded-xl'>
+                        <div className='px-2 md:px-4 py-2  border bg-gray-200 border-none rounded-xl'>
                             <p className='text-sm text-center'>{player.role}</p>
                         </div>
                     </div>

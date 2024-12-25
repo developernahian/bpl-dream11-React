@@ -3,7 +3,7 @@ import bgShadow from '../assets/images/bg-shadow.png'
 
 const Footer = () => {
     return (
-        <footer className='mt-96 relative'>
+        <footer className='mt-60 md:mt-96 relative'>
 
 
             {/* ***************************** Subscribe to our Newsletter section Start ***************************** */}

@@ -121,17 +121,17 @@ const Header = ({ handleIncreaseCredit, credit, handleClickActiveTab, activeTab,
 
             {/* ***************************** Toggle Button Start with Status Satrt ***************************** */}
 
-            <section className="flex justify-between items-center mt-10">
+            <section className="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-10 gap-3">
                 {/* left */}
                 <div>
                     {
                         activeTab === 'available' ? (
                             <div>
-                                <p className="text-2xl font-bold">Available Players</p>
+                                <p className="text-xl md:text-2xl font-bold">Available Players</p>
                             </div>
                         ) : (
                             <div>
-                                <p className="text-2xl font-bold">Selected Players ({selectLength}/6)</p>
+                                <p className="text-xl md:text-2xl font-bold">Selected Players ({selectLength}/6)</p>
                             </div>
                         )
                     }
