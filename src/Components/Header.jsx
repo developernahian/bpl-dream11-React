@@ -111,7 +111,7 @@ const Header = ({ handleIncreaseCredit, credit, handleClickActiveTab, activeTab 
                 <p className="text-white_secondary text-center text-base md:text-2xl">Beyond Boundaries Beyond Limits</p>
 
                 <div className="border-2 rounded-xl border-[#E7FE29] px-2 py-2 hover:border-yellow-500 mt-6 mb-12">
-                    <button onClick={() => handleIncreaseCredit(100000)} className="btn font-bold bg-[#E7FE29] hover:bg-yellow-500">Claim Free Credit</button>
+                    <button onClick={() => handleIncreaseCredit(700000)} className="btn font-bold bg-[#E7FE29] hover:bg-yellow-500">Claim Free Credit</button>
                 </div>
 
             </section>
