@@ -149,6 +149,7 @@ const Header = ({ handleIncreaseCredit, credit, handleClickActiveTab, activeTab,
 
                         backgroundColor: activeTab === 'available' ? '#E7FE29' : 'white',
                         color: activeTab === 'available' ? 'black' : 'rgba(19, 19, 19, 0.6)',
+                        
 
                     }}
                         onClick={() => handleClickActiveTab('available')}
@@ -166,6 +167,8 @@ const Header = ({ handleIncreaseCredit, credit, handleClickActiveTab, activeTab,
 
                         backgroundColor: activeTab === 'selected' ? '#E7FE29' : 'white',
                         color: activeTab === 'selected' ? 'black' : 'rgba(19, 19, 19, 0.6)',
+
+                        
 
                     }}
                         onClick={() => handleClickActiveTab('selected')}

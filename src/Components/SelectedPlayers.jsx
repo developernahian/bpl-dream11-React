@@ -10,11 +10,11 @@ const SelectedPlayers = ({ selectPlayer, handleDeletePlayer, handleClickActiveTa
 
             {/* start */}
             {
-                selectPlayer.length === 0 ? <h1 className='text-2xl font-semibold text-center'>No players selected yet...</h1> : ''
+                selectPlayer.length === 0 ? <h1 className='text-2xl font-semibold text-center'>No players selected yet . . .  ¯\_(ツ)_/¯  </h1> : ''
             }
             {/* end */}
 
-            
+
 
             <div className='flex flex-col gap-3'>
                 {
