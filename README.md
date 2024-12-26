@@ -82,9 +82,14 @@ Player information is stored in a JSON file with the following details:
 
 ---
 
-## Setup Instructions
+### Page with Available Players
+<div align="center">
+<img src="[application-design/main.jpg](https://i.ibb.co.com/T2t82KC/BPL-Dream-11-12-26-2024-11-25-PM.png)"/>
+<div>
 
-1. Clone the repository.
-2. Install dependencies:
-   ```bash
-   npm install
+---
+
+### Page with Selected Players
+<div align="center">
+<img src="[application-design/main-2.jpg](https://i.ibb.co.com/T2t82KC/BPL-Dream-11-12-26-2024-11-26-PM.png)"/>
+<div>
