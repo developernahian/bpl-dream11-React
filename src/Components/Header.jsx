@@ -27,11 +27,12 @@ const Header = ({ handleIncreaseCredit, credit, handleClickActiveTab, activeTab,
 
             {/*TODO: ***************************** Navbar Start ***************************** */}
 
-            <nav className="navbar rounded-xl  fixed    ">
+            <nav className="navbar     bg-white/50 backdrop-blur-xl fixed top-0 z-50 w-11/12 mx-auto .
+              ">
 
                 {/* Logo */}
                 <div className="flex-1 lg:flex-none">
-                    <img src={logo} alt="logo" className="w-20" />
+                    <img src={logo} alt="logo" className=" w-16 md:w-20" />
                 </div>
 
                 {/* Dropdown menu for small screens */}
@@ -108,15 +109,15 @@ const Header = ({ handleIncreaseCredit, credit, handleClickActiveTab, activeTab,
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
                 }}
-                className=" mt-10 flex flex-col justify-center items-center rounded-xl">
+                className="mt-24 md:mt-28 flex flex-col justify-center items-center rounded-xl">
 
 
-                <img src={bannerMain} alt="" className="w-66 mt-12" />
+                <img src={bannerMain} alt="img" className="w-66 mt-12" />
                 <p className="text-white_primary text-center text-lg md:text-3xl lg:text-[42px] pt-6 pb-4">Assemble Your Ultimate Dream 11 Cricket Team</p>
                 <p className="text-white_secondary text-center text-base md:text-2xl">Beyond Boundaries Beyond Limits</p>
 
                 <div className="border-2 rounded-xl border-[#E7FE29] px-2 py-2 hover:border-yellow-500 mt-6 mb-12">
-                    <button onClick={() => handleIncreaseCredit(700000)} className="btn font-bold bg-[#E7FE29] hover:bg-yellow-500">Claim Free Credit</button>
+                    <button onClick={() => handleIncreaseCredit()} className="btn font-bold bg-[#E7FE29] hover:bg-yellow-500">Claim Free Credit</button>
                 </div>
 
             </section>
@@ -127,7 +128,7 @@ const Header = ({ handleIncreaseCredit, credit, handleClickActiveTab, activeTab,
 
             {/* TODO: ************** Toggle Button Start with Status Satrt ***************** */}
 
-            <section className="flex flex-col md:flex-row justify-between items-center py-5 px-3 mt-5 mb-20 md:mt-10 gap-3 rounded-xl            ">
+            <section className="flex flex-col md:flex-row justify-between items-center py-5 px-3 mt-5 mb-8 md:mt-10 gap-3 rounded-xl">
                 {/* left */}
                 <div>
                     {

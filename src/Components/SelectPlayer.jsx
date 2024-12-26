@@ -2,10 +2,7 @@ import PropTypes from 'prop-types';
 import { RiDeleteBin6Line } from "react-icons/ri";
 
 const SelectPlayer = ({ selectPlayer, handleDeletePlayer }) => {
-    // const [playerId, image] = selectPlayer;
-    // PROBLEM:
-    // console.log( typeof selectPlayer);
-    // console.log(selectPlayer.length);
+
 
 
     return (

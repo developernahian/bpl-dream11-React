@@ -7,6 +7,8 @@ import Header from './Components/Header'
 import AvailablePlayers from './Components/AvailablePlayers'
 import SelectedPlayers from './Components/SelectedPlayers'
 
+import { toast } from 'react-toastify';
+
 function App() {
 
   const [credit, setCredit] = useState(0)
@@ -16,8 +18,18 @@ function App() {
   const [select, setSelect] = useState([])
 
 
-  const handleIncreaseCredit = (c) => {
-    setCredit(credit + c)
+  const handleIncreaseCredit = () => {
+    setCredit(credit + 850000)
+    toast.success('Credit Added to your Account', {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      });
   }
 
   const handleClickActiveTab = (tab) => {
@@ -26,24 +38,64 @@ function App() {
 
   const handleClickSelect = (player) => {
     if (select.length === 6) {
-      alert('You can not select more than 6 players');
+      toast.warn('You can not select more than 6 players', {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
       return;
     }
     else if (credit < player.biddingPrice) {
-      alert('You have not enough credit')
+      toast.error('Not enough money to buy this player. Claim Free Credit!', {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
       return;
     }
     else {
 
       const isExist = select.find(previousPlayer => previousPlayer.playerId === player.playerId)
       if (isExist) {
-        alert('You can not select same player twice');
+        toast.error('Player already selected', {
+          position: "top-center",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
         return;
       }
       else {
         const newSelect = [...select, player];
         setSelect(newSelect);
-        handleIncreaseCredit(-player.biddingPrice);
+
+        toast.success(`Congrates !! ${player.name} is now in your squad`, {
+          position: "top-center",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
+
+
+        handleDecreaseCredit(player.biddingPrice)
       }
 
 
@@ -51,6 +103,10 @@ function App() {
 
   };
   // console.log(select.length);
+
+  const handleDecreaseCredit = (biddingPrice) => {
+      setCredit(credit - biddingPrice)
+  }
 
 
 
@@ -61,6 +117,19 @@ function App() {
     // delete er sathe sathe coin increase korte chaile nicher line CommentOut korte hobe.
     //and (playerId, player)  *player* arguement receive korte hobe SelectPlayer er button click theke
     // handleIncreaseCredit(player.biddingPrice);
+
+
+    toast.warn('Player removed', {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      });
+
   }
 
 
