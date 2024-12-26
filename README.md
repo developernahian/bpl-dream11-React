@@ -1,5 +1,5 @@
 # BPL Dream 11
-## Live Link: [Live Demo](https://need-bpl.surge.sh/)
+## Live Link:-> [Check out my live project here!](https://need-bpl.surge.sh/)
 
 BPL Dream 11 is a React-based cricket player bidding application inspired by the BPL (Bangladesh Premier League). This app allows users to manage virtual coins, select players, and enjoy a dynamic bidding experience. The application includes a **Navbar**, **Banner**, **Player Selection Section**, **Newsletter**, and **Footer** to provide a seamless user experience.
 
@@ -82,14 +82,16 @@ Player information is stored in a JSON file with the following details:
 
 ---
 
-### Page with Available Players
-<div align="center">
-<img src="[application-design/main.jpg](https://i.ibb.co.com/T2t82KC/BPL-Dream-11-12-26-2024-11-25-PM.png)"/>
-<div>
+## Design
+
+### Available Players Page
+<div style="text-align: center;">
+  <img src="https://i.ibb.co.com/T2t82KC/BPL-Dream-11-12-26-2024-11-25-PM.png" alt="Image" style="width: 100%;" />
+</div>
 
 ---
 
-### Page with Selected Players
-<div align="center">
-<img src="[application-design/main-2.jpg](https://i.ibb.co.com/T2t82KC/BPL-Dream-11-12-26-2024-11-26-PM.png)"/>
-<div>
+### Selected Players Page
+<div style="text-align: center;">
+  <img src="https://i.ibb.co.com/kQqKDzn/BPL-Dream-11-12-26-2024-11-26-PM.png" alt="Image" style="width: 100%;" />
+</div>
