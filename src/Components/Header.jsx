@@ -16,9 +16,18 @@ const Header = ({ handleIncreaseCredit, credit, handleClickActiveTab, activeTab,
 
 
 
+            {/* bg-white sticky top-0 z-50 bg-opacity-50 */}
+            {/* bg-white/50 backdrop-blur-xl sticky top-0 z-50 */}
+            {/* bg-white/50 backdrop-blur-xl fixed top-0 z-50 w-11/12 mx-auto rounded-xl */}
 
-            {/* ***************************** Navbar Start ***************************** */}
-            <nav className="navbar rounded-xl">
+            {/* <section className="bg-white/50 backdrop-blur-xl fixed top-0 z-50 w-11/12 mx-auto rounded-xl"> */}
+            {/* </section> */}
+
+
+
+            {/*TODO: ***************************** Navbar Start ***************************** */}
+
+            <nav className="navbar rounded-xl  fixed    ">
 
                 {/* Logo */}
                 <div className="flex-1 lg:flex-none">
@@ -82,18 +91,14 @@ const Header = ({ handleIncreaseCredit, credit, handleClickActiveTab, activeTab,
                 </div>
 
             </nav>
+
             {/* ***************************** Navbar End ***************************** */}
 
 
 
 
 
-
-
-
-
-
-            {/* ***************************** Banner Start ***************************** */}
+            {/*TODO: ***************************** Banner Start ***************************** */}
 
             <section
                 style={{
@@ -115,13 +120,14 @@ const Header = ({ handleIncreaseCredit, credit, handleClickActiveTab, activeTab,
                 </div>
 
             </section>
+
             {/* ***************************** Banner End ***************************** */}
 
 
 
-            {/* ***************************** Toggle Button Start with Status Satrt ***************************** */}
+            {/* TODO: ************** Toggle Button Start with Status Satrt ***************** */}
 
-            <section className="flex flex-col md:flex-row justify-between items-center mt-5 md:mt-10 gap-3">
+            <section className="flex flex-col md:flex-row justify-between items-center py-5 px-3 mt-5 mb-20 md:mt-10 gap-3 rounded-xl            ">
                 {/* left */}
                 <div>
                     {
@@ -149,7 +155,6 @@ const Header = ({ handleIncreaseCredit, credit, handleClickActiveTab, activeTab,
 
                         backgroundColor: activeTab === 'available' ? '#E7FE29' : 'white',
                         color: activeTab === 'available' ? 'black' : 'rgba(19, 19, 19, 0.6)',
-                        
 
                     }}
                         onClick={() => handleClickActiveTab('available')}
@@ -168,9 +173,8 @@ const Header = ({ handleIncreaseCredit, credit, handleClickActiveTab, activeTab,
                         backgroundColor: activeTab === 'selected' ? '#E7FE29' : 'white',
                         color: activeTab === 'selected' ? 'black' : 'rgba(19, 19, 19, 0.6)',
 
-                        
-
                     }}
+
                         onClick={() => handleClickActiveTab('selected')}
 
                     >Selected ({selectLength})</button>
@@ -182,13 +186,7 @@ const Header = ({ handleIncreaseCredit, credit, handleClickActiveTab, activeTab,
             {/* style or className*/}
             {/* className={`${activeTab === 'available' ? '' : ''}`} */}
 
-            {/* ***************************** Toggle Button End with Status End ***************************** */}
-
-
-
-
-
-
+            {/* ********** Toggle Button End with Status End ************** */}
 
 
 
