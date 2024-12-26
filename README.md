@@ -86,7 +86,7 @@ Player information is stored in a JSON file with the following details:
 
 ### Available Players Page
 <div style="text-align: center;">
-  <img src="https://i.ibb.co.com/T2t82KC/BPL-Dream-11-12-26-2024-11-25-PM.png" alt="Image" style="width: 100%;" />
+  <img src="https://i.ibb.co.com/HdyVxgc/BPL-Dream-11-12-27-2024-12-53-AM.png" alt="Image" style="width: 100%;" />
 </div>
 
 ---
