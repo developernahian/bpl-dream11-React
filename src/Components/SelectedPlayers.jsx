@@ -21,16 +21,6 @@ const SelectedPlayers = ({ selectPlayer, handleDeletePlayer, handleClickActiveTa
                 }
             </div>
 
-            {/* {
-                selectPlayer.map((player, index) => <section key={index} className='bg-red-100'>
-
-                    <div className='bg-green-100'>
-                        {player.image}
-                        {player.name}
-                    </div>
-
-                </section>)
-            } */}
 
 
 

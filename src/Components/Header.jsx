@@ -14,17 +14,6 @@ const Header = ({ handleIncreaseCredit, credit, handleClickActiveTab, activeTab,
         <div>
 
 
-
-
-            {/* bg-white sticky top-0 z-50 bg-opacity-50 */}
-            {/* bg-white/50 backdrop-blur-xl sticky top-0 z-50 */}
-            {/* bg-white/50 backdrop-blur-xl fixed top-0 z-50 w-11/12 mx-auto rounded-xl */}
-
-            {/* <section className="bg-white/50 backdrop-blur-xl fixed top-0 z-50 w-11/12 mx-auto rounded-xl"> */}
-            {/* </section> */}
-
-
-
             {/*TODO: ***************************** Navbar Start ***************************** */}
 
             <nav className="navbar     bg-white/50 backdrop-blur-xl fixed top-0 z-50 w-11/12 mx-auto .

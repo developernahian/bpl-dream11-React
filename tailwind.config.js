@@ -24,7 +24,7 @@ export default {
       },
 
       backgroundImage: {
-        // bgShadow: "url('bg-shadow.png')",
+        // bgShadow: "url('bg-shadow.png')",//surge Deploy te image paina tai evabe na niye assets/images theke import kore use korechi
       },
 
     },
